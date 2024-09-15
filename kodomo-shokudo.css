@@ -1,0 +1,175 @@
+/* HTML全体を設定 */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #9fcffa;
+  }
+  
+  /* コンテンツエリアを設定 */
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* メインコンテンツ */
+  .main-content {
+    flex: 1;
+  }
+  
+  /* フッターを固定 */
+  footer {
+    background-color: #9fcffa;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    font-family: serif;
+    color: #222233;
+    font-size: 80%;
+    border-top: aliceblue 1px solid;
+
+  }
+  
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    font-family: 'Kosugi Maru', sans-serif;
+    color: rgb(245, 191, 79);
+    text-align: center;
+}
+
+.title-icon{
+    width: 80px;
+}
+
+.title-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.mapLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.mapWidth{
+    margin-top:0 !important;
+}
+
+.checkbox {
+    border-style: dotted;
+    border-color: rgb(245, 191, 79);
+    padding: 1rem 7rem;
+    border-radius: 10px;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonPosition {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.button {
+    padding: 8px 20px;
+    background-color: rgb(245, 191, 79);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: rgb(225, 150, 1);
+}
+
+.mapWidth {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+
+#map {
+    height: 600px;
+    width: 75%;
+}
+
+#sidebar {
+    padding: 0 8px;
+    width: 25%;
+    background-color: aliceblue;
+}
+
+#sidebar p {
+    /* line-height: 8px; */
+    margin:0;
+    font-size: 80%;
+}
+
+.info-photo{
+    width:100%;
+    max-width: 300px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: solid 1px;
+}
+
+.info {
+    background-color: aliceblue;
+    padding: 4px;
+    width:100%;
+
+}
+.info .tag {
+    font-size: 80%;
+    border: solid 1px black;
+    color: white;
+    background-color: blue;
+    padding: 4px;
+}
+
+.info table {
+    font-size: 80%;
+}
+
+@media (max-width: 768px) {
+    .checkbox {
+        padding: 1rem 1rem;
+    }
+
+    .mapWidth {
+        flex-direction: column;
+    }
+
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+
+    #sidebar {
+        padding: 0 0 0 0;
+        max-width: 100%;
+        width:100%;
+    }
+
+    .mapLayout {
+        justify-content: normal;
+    }
+}
