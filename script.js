@@ -1,5 +1,5 @@
 // map基本設定
-const map = L.map('map').setView([35.689501375244, 139.69173371705], 10);  // 都庁を中心に設定
+const map = L.map('map').setView([35.788363,139.612402], 14);  // 和光市駅を中心に設定
 map.locate({ setView: true, maxZoom: 13 });
 
 // アイコン設定
